@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sahana — In Every Language</title>
+  <meta name="description" content="A keepsake archive: one name, 143 languages and scripts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ Shared header (identical across all four Figma designs) ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#prologue" aria-label="Sahana, back to prologue">
+        <span class="brand-name">Sahana</span>
+        <span class="brand-tag">• In every language</span>
+      </a>
+
+      <nav class="nav-pill" aria-label="Primary">
+        <a href="#prologue" data-nav="prologue">Prologue</a>
+        <a href="#act1" data-nav="act1">Act I: Our Story</a>
+        <a href="#act2" data-nav="act2">Act II: 143 Languages</a>
+        <a href="#act3" data-nav="act3">Act III: Final Letter</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="chip opt" id="musicToggle" type="button" aria-pressed="false" aria-label="Toggle ambient soft music">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 5v2M4.5 3v6M7 4v4M9.5 2.5v7" stroke="#514346" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <span>Soft Music</span>
+          <span class="dot" aria-hidden="true"></span>
+        </button>
+        <button class="chip opt-2" id="favChip" type="button" aria-label="Favorites">
+          <svg width="12" height="11" viewBox="0 0 12 11" fill="none" aria-hidden="true"><path d="M6 10.2 1.6 5.9A2.6 2.6 0 0 1 6 2.6a2.6 2.6 0 0 1 4.4 3.3L6 10.2Z" stroke="#514346" stroke-width="1.1"/></svg>
+          <span>Favorites (<span id="favCount">0</span>)</span>
+        </button>
+        <span class="icon-btn" aria-hidden="true">
+          <svg viewBox="0 0 12 12" fill="none"><circle cx="6" cy="4" r="2.2" stroke="#fff" stroke-width="1.1"/><path d="M2 11c.6-2 2.2-3 4-3s3.4 1 4 3" stroke="#fff" stroke-width="1.1"/></svg>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =====================================================================
+         DESIGN 3 — PROLOGUE (hero folio, archival tokens, footnote)
+         ===================================================================== -->
+    <section id="prologue" class="hero-section">
+      <div class="hero-wrap">
+        <div class="glow" style="width:720px;height:720px;top:-128px;left:calc(50% - 360px);background:rgba(255,218,218,.3)"></div>
+        <div class="glow" style="width:480px;height:480px;right:-128px;top:48%;background:rgba(255,217,224,.2);filter:blur(120px)"></div>
+        <div class="glow" style="width:520px;height:520px;left:-96px;bottom:-96px;background:rgba(245,228,233,.6);filter:blur(130px)"></div>
+
+        <div class="folio reveal">
+          <svg class="corner tl" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 44V12c0-4 4-8 8-8h28M10 44h30c4 0 4-4 4-8V14" fill="none" stroke="#805254" stroke-width="1"/></svg>
+          <svg class="corner tr" viewBox="0 0 48 48" aria-hidden="true"><path d="M44 4v36c0 4-4 8-8 8H8" fill="none" stroke="#805254" stroke-width="1"/></svg>
+          <svg class="corner bl" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 4v36c0 4 4 8 8 8h32" fill="none" stroke="#805254" stroke-width="1"/></svg>
+          <svg class="corner br" viewBox="0 0 48 48" aria-hidden="true"><path d="M44 44V12c0-4-4-8-8-8H4" fill="none" stroke="#805254" stroke-width="1"/></svg>
+          <div class="wm" aria-hidden="true">
+            <svg viewBox="0 0 520 520" fill="none" stroke="#562533" stroke-width="1.2"><circle cx="260" cy="260" r="240"/><circle cx="260" cy="260" r="210" stroke-dasharray="4 6"/><path d="M260 120c-55 60-95 105-95 150a95 95 0 0 0 190 0c0-45-40-90-95-150Z"/></svg>
+          </div>
+
+          <div class="note-badge">A little something, made with love <span aria-hidden="true" style="color:#562533">♥</span></div>
+          <p class="caps" style="margin:18px 0 0;color:var(--mauve)">A story written from the heart</p>
+          <h1 class="hero-title">SAHANA</h1>
+          <p class="hero-quote">“Some names deserve to be written in every language.”</p>
+          <p class="hero-body">A little collection of memories, unspoken feelings, and one name that found its way into <strong>143 different languages</strong> and writing systems across time and paper.</p>
+
+          <div class="hero-cta">
+            <a class="btn" href="#act1">Open our story
+              <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <span class="hero-note">Made of memories, written with love.</span>
+          </div>
+
+          <div class="act-index">
+            <a href="#act1"><i></i>Act I • Our story</a>
+            <span class="sep">/</span>
+            <a href="#act2"><i></i>Act II • 143 languages</a>
+            <span class="sep">/</span>
+            <a href="#act3"><i></i>Act III • Sealed letter</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tokens">
+        <div class="tokens-head reveal">
+          <span class="caps" style="color:var(--mauve);letter-spacing:2.2px;font-size:11px">Prologue conclusion</span>
+          <span class="rule"></span>
+          <h2>The Archival Tokens</h2>
+        </div>
+
+        <div class="triptych">
+          <article class="card reveal">
+            <div>
+              <div class="photo p-book"><span class="tag">Folio No. 01</span></div>
+              <div style="margin-top:16px">
+                <h3>In Every Script</h3>
+                <p style="margin-top:4px">From classical Devanagari to French cursive, her name inscribed across continents and eras.</p>
+              </div>
+            </div>
+            <div class="meta">
+              <a class="caps" href="#act1" style="color:var(--mauve)">Act I passage</a>
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true"><path d="M1 2c2-1 4-1 6 .5V11c-2-1.5-4-1.5-6-.5V2ZM15 2c-2-1-4-1-6 .5V11c2-1.5 4-1.5 6-.5V2Z" stroke="#805254" stroke-width="1"/></svg>
+            </div>
+          </article>
+
+          <article class="card lift seal-card reveal" id="sealCard">
+            <div>
+              <div class="photo p-seal dark"><span class="tag">Unopened wax seal</span></div>
+              <div class="unseal" style="margin-top:16px">
+                <h3>A Secret Keepsake</h3>
+                <p style="margin-top:4px">Every memory holds a dedicated wax seal waiting to unlock private letters and whispered moments.</p>
+              </div>
+            </div>
+            <div class="meta">
+              <span class="caps" style="color:var(--plum)">Read seal</span>
+              <button class="seal-btn" id="sealBtn" type="button" aria-expanded="false" aria-label="Break the wax seal and read the note">
+                <svg viewBox="0 0 12 14" fill="none" aria-hidden="true"><rect x="1" y="6" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M3.5 6V4a2.5 2.5 0 0 1 5 0v2" stroke="currentColor" stroke-width="1.2"/></svg>
+              </button>
+            </div>
+            <div class="seal-reveal" aria-live="polite">
+              <p>“You had become the singular person whose everyday happenings I instinctively wanted to catalog.”</p>
+              <span class="caps" style="color:var(--mauve)">— A quiet note, unsealed</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div>
+              <div class="photo p-hand dark"><span class="tag">143 translations</span></div>
+              <div style="margin-top:16px">
+                <h3>143 Dialects of Devotion</h3>
+                <p style="margin-top:4px">Listen and read how Sahana echoes through Spanish, Japanese, Gaelic, Arabic, and ancient roots.</p>
+              </div>
+            </div>
+            <div class="meta">
+              <a class="caps" href="#act2" style="color:var(--mauve)">Act II preview</a>
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" aria-hidden="true"><path d="M2 3h7M5.5 1v2M3.5 3c.8 2.6 2.4 4.5 4.6 5.6M8 3c-.8 2.6-2.5 4.6-5 5.8M9 14l3-7 3 7M10 12h4" stroke="#805254" stroke-width="1" stroke-linecap="round"/></svg>
+            </div>
+          </article>
+        </div>
+
+        <div class="colophon reveal">
+          <blockquote>“To love someone is to learn how the universe spells their name.”</blockquote>
+          <div class="by"><i></i>Bound in devotion<i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         DESIGN 2 — ACT I (chapters 01–11)
+         ===================================================================== -->
+    <section id="act1" class="act1">
+      <div class="act-hero reveal">
+        <span class="pill-label">
+          <svg width="13" height="12" viewBox="0 0 13 12" fill="none" aria-hidden="true"><path d="M1 2h4v8H1zM8 2h4v8H8z" stroke="#805254" stroke-width="1"/></svg>
+          Act I: The Keepsake Chronicle
+        </span>
+        <h2 class="act-title">Our Story, Inscribed in Silence &amp; Sunlight</h2>
+        <p class="act-sub">Eleven chapters of quiet footsteps, gentle returns, and unhurried truths preserved for eternity.</p>
+        <div class="ornament"><span class="divider-line"></span><svg width="15" height="14" viewBox="0 0 15 14" fill="none" aria-hidden="true"><path d="M7.5 12 2 6.5a3.2 3.2 0 0 1 5.5-3.5A3.2 3.2 0 0 1 13 6.5L7.5 12Z" stroke="#805254" stroke-width="1"/></svg><span class="divider-line r"></span></div>
+      </div>
+
+      <!-- CHAPTER 01 -->
+      <section class="chapter" id="ch01" data-chapter="01">
+        <div class="chapter-inner narrow ch-center reveal">
+          <span class="eyebrow">Chapter 01 • Genesis</span>
+          <h3 class="ch-title it">“Every beautiful story begins somewhere.”</h3>
+          <p class="ch-body">Not every story begins with something extraordinary. Sometimes, it begins with two people, a few spontaneous conversations, and quiet moments that gently anchor themselves into memory until they become irreplaceable.</p>
+          <figure class="ch-01-card" style="margin:16px auto 0">
+            <div class="photo p-book" style="height:300px"><span class="tag">Entry 001 // The Coffee Counter</span></div>
+            <figcaption class="cap">“A brief hello, an unexpected turn of phrase, and a quiet shift in the universe.”</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- CHAPTER 02 -->
+      <section class="chapter ch-02" id="ch02" data-chapter="02">
+        <div class="ch-02-box reveal">
+          <div class="ch-02-text">
+            <div style="display:flex;gap:4px;align-items:center;flex-wrap:wrap">
+              <span class="caps" style="color:var(--mauve);letter-spacing:1.1px">Chapter 02 • Transition</span>
+              <span style="width:4px;height:4px;border-radius:50%;background:var(--mauve);display:inline-block;margin:0 4px"></span>
+              <span class="caps" style="color:var(--mauve);letter-spacing:1.1px">Memory Trace</span>
+            </div>
+            <h3 class="ch-title" style="font-family:var(--serif-display);font-style:normal">Somewhere between friendship<br />and something more.</h3>
+            <p class="ch-body" style="font-size:17px;line-height:27.6px;color:#22191d">There was never a sudden drumroll. It was woven from late-night telephone calls that dissolved into morning sunlight, involuntary chuckles shared in bustling rooms, and that rare sense of ease where words were no longer mandatory.</p>
+            <div class="fragment">
+              <div style="display:flex;gap:8px;align-items:center">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" aria-hidden="true"><path d="M2 2h12v11H2z" stroke="#562533" stroke-width="1"/><path d="M5 5h6M5 8h6" stroke="#562533" stroke-width="1"/></svg>
+                <h4>The Quiet Recognition</h4>
+              </div>
+              <p>You had become the singular person whose everyday happenings I instinctively wanted to catalog.</p>
+            </div>
+          </div>
+          <div class="ch-02-note">
+            <div class="note-card" style="transform:rotate(1deg)">
+              <div style="display:flex;justify-content:space-between;align-items:center;padding-bottom:8px">
+                <span class="caps" style="color:var(--taupe);letter-spacing:.55px">Marginal Note #14</span>
+                <svg width="12" height="15" viewBox="0 0 12 15" fill="none" aria-hidden="true"><path d="M2 1h8v13L6 11 2 14V1Z" stroke="#847376" stroke-width="1"/></svg>
+              </div>
+              <p class="marginal">“She laughed at a joke nobody else even caught. That was the exact second the ground shifted underneath my boots.”</p>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding-top:24px">
+                <span class="caps" style="color:var(--mauve)">October Twilight</span>
+                <svg width="12" height="11" viewBox="0 0 12 11" fill="none" aria-hidden="true"><path d="M6 10.2 1.6 5.9A2.6 2.6 0 0 1 6 2.6a2.6 2.6 0 0 1 4.4 3.3L6 10.2Z" stroke="#805254" stroke-width="1"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTER 03 -->
+      <section class="chapter ch-03" id="ch03" data-chapter="03">
+        <div class="ch-03-inner">
+          <div class="ch-center reveal" style="max-width:672px">
+            <span class="eyebrow">Chapter 03 • Vignettes</span>
+            <h3 class="ch-title">Our Little World</h3>
+            <p class="ch-body" style="font-family:var(--body-sans);font-size:15px;line-height:24px;color:var(--ink-2)">Little conversations. Endless memories. Fragments saved from the stream of time.</p>
+          </div>
+          <div class="bento">
+            <article class="card reveal">
+              <div class="top"><span>11:42 PM • Audio echo</span><svg width="10" height="13" viewBox="0 0 10 13" fill="none" aria-hidden="true"><rect x="3" y="0.5" width="4" height="7" rx="2" stroke="#847376"/><path d="M1 6a4 4 0 0 0 8 0M5 10.5v2" stroke="#847376" stroke-linecap="round"/></svg></div>
+              <div>
+                <p class="quote">“Tell me that silly childhood story one more time.”</p>
+                <p class="sm" style="margin-top:8px">The clock melted away while you recounted rainstorms in your grandmother's courtyard.</p>
+              </div>
+              <div class="foot"><i></i>43 minutes recorded</div>
+            </article>
+
+            <article class="card mid reveal">
+              <div class="photo p-hand" style="height:176px"></div>
+              <div>
+                <span class="eyebrow" style="font-size:11px;letter-spacing:1.1px">Quiet keepsake</span>
+                <h3 style="margin-top:4px;font-family:var(--serif-display);font-weight:400;font-size:22px">The Pressed Petal</h3>
+                <p class="sm" style="margin-top:6px;font-size:13px;line-height:20px;color:#22191d">Stored secretly between page 112 and 113 of the poetry anthology you handed me.</p>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="top"><span>04:18 PM • Street walk</span><svg width="13" height="11" viewBox="0 0 13 11" fill="none" aria-hidden="true"><path d="M1 10h11M2 10V4l4.5-3L11 4v6" stroke="#847376"/></svg></div>
+              <div>
+                <p class="quote">“Look at how the sun hits the stone arches.”</p>
+                <p class="sm" style="margin-top:8px">I was looking at the stones, but my periphery was filled only with your smile.</p>
+              </div>
+              <div class="foot"><i></i>Golden hour remembrance</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTER 04 -->
+      <section class="chapter ch-04" id="ch04" data-chapter="04">
+        <div class="ch-04-inner reveal">
+          <span class="pill-label" style="background:var(--pink);color:#7a4d50;font-size:11px;letter-spacing:1.1px;padding:10px 16px 8px">Chapter 04 • The Turning Point</span>
+          <h3 class="ch-title">And then, something changed.</h3>
+          <span class="rule-thin"></span>
+          <p class="ch-body">It wasn't a sudden storm or a theatrical revelation. It was the simple, staggering realization that my world was undeniably kinder, brighter, and infinitely more profound simply because you were walking in it.</p>
+          <p class="pull">The moment affection outgrew the boundaries of silence.</p>
+        </div>
+      </section>
+
+      <!-- CHAPTER 05 -->
+      <section class="chapter ch-05" id="ch05" data-chapter="05">
+        <div class="ch-05-box reveal">
+          <div class="ch-05-inner">
+            <span class="caps" style="color:var(--taupe);letter-spacing:1.1px">Chapter 05 • The Interlude</span>
+            <h3 class="ch-title">Some stories pause without ending.</h3>
+            <p class="ch-body">When the words paused and distance settled between us, the quiet was heavy, but it was never bitter. Silence taught me to honor your pace over my desires, learning that true care is measured not by proximity, but by the gentleness with which you safeguard someone's peace.</p>
+            <div class="tags">
+              <span>◦ Guarding boundaries</span><span class="dot">•</span><span>✦ Patience without grievance</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTER 06 -->
+      <section class="chapter ch-06" id="ch06" data-chapter="06">
+        <div class="ch-06-inner">
+          <div class="ch-06-img reveal">
+            <div class="photo p-hand" style="height:385px;border-radius:0;box-shadow:none"></div>
+            <div class="caption">“Hello again.”</div>
+          </div>
+          <div class="ch-06-text reveal">
+            <span class="eyebrow">Chapter 06 • The Return</span>
+            <h3 class="ch-title">Some connections find their way back.</h3>
+            <p class="ch-body">The relief of seeing your face again held no pretenses or scorekeeping. There was only a profound gratitude that the threads tying our lives had not frayed in the cold. We resumed not where we left off, but where we had grown.</p>
+            <div class="aside">
+              <svg width="16" height="18" viewBox="0 0 16 18" fill="none" aria-hidden="true"><path d="M3 1h10v16l-5-3-5 3V1Z" stroke="#805254" stroke-width="1"/></svg>
+              <div>
+                <h4>Unburdened grace</h4>
+                <p>Returning without demands is the quietest declaration of true devotion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTER 07 -->
+      <section class="chapter ch-07" id="ch07" data-chapter="07">
+        <div class="ch-07-box reveal">
+          <span class="caps" style="color:var(--mauve);letter-spacing:1.1px">Chapter 07 • Sanctuary</span>
+          <h3 class="ch-title">“Not every heart is ready for the same things.”</h3>
+          <div class="ch-body">
+            <p style="margin:0 0 6px">To love someone truthfully is to understand the quiet battlements they have erected around their soul. Your hesitation was never a barrier I sought to breach; it was a sacred boundary I sought to honor.</p>
+            <p style="margin:0;color:var(--ink-2)">Emotional safety is not granted by bold professions, but by consistent, day-by-day proof that you will never be hurried, cornered, or misunderstood here.</p>
+          </div>
+          <div class="rules">
+            <div class="rule-card"><div class="k">Sanctuary Rule I</div><div class="v">Zero Urgency</div><p class="d">Every sunrise arrives on its own schedule.</p></div>
+            <div class="rule-card"><div class="k">Sanctuary Rule II</div><div class="v">Unconditional Listening</div><p class="d">No unsolicited counsel, just open ears.</p></div>
+            <div class="rule-card"><div class="k">Sanctuary Rule III</div><div class="v">Total Autonomy</div><p class="d">Your comfort defines the horizon.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTER 08 -->
+      <section class="chapter ch-08" id="ch08" data-chapter="08">
+        <div class="ch-08-inner reveal">
+          <span class="eyebrow">Chapter 08 • Authenticity</span>
+          <h3 class="ch-title">Some things don't need a name to matter.</h3>
+          <p class="ch-body">We live in a world obsessed with titles, definitions, and contractual certainties. But genuine companionship thrives in the unspoken clarity of showing up, wishing each other well, and delighting in the quiet reality of each other's existence.</p>
+          <span class="badge">✦ Present, loyal, and unburdened</span>
+        </div>
+      </section>
+
+      <!-- CHAPTER 09 -->
+      <section class="chapter ch-09" id="ch09" data-chapter="09">
+        <div class="ch-09-box reveal">
+          <div class="ch-09-head">
+            <span class="eyebrow">Chapter 09 • Intentions</span>
+            <h3 class="ch-title it">No expectations. Just honest wishes.</h3>
+            <p class="ch-body" style="font-family:var(--body-sans);font-size:15px;line-height:24px;color:var(--ink-2)">The silent benedictions I carry for your life.</p>
+          </div>
+          <div class="wish-row">
+            <div class="wish">
+              <div class="ico"><svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.2"/><path d="M6 9.5c1 1 2 1.2 3 1.2s2-.2 3-1.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+              <h3>Unshakable Peace</h3>
+              <p>That your mornings greet you without dread, and your evenings wrap you in warm quietude.</p>
+              <div class="sig">— For Sahana</div>
+            </div>
+            <div class="wish">
+              <div class="ico"><svg viewBox="0 0 18 15" fill="none" aria-hidden="true"><path d="M1 7.5c2-4 5-6 8-6s6 2 8 6c-2 4-5 6-8 6s-6-2-8-6Z" stroke="currentColor" stroke-width="1.2"/></svg></div>
+              <h3>Wild, Fearless Dreams</h3>
+              <p>That every single aspiration whispered to the dark finds soil, sun, and room to blossom.</p>
+              <div class="sig">— Forever</div>
+            </div>
+            <div class="wish">
+              <div class="ico"><svg viewBox="0 0 17 17" fill="none" aria-hidden="true"><path d="M8.5 1.5l2 4.3 4.7.6-3.4 3.2.9 4.7-4.2-2.3-4.2 2.3.9-4.7L1.8 6.4l4.7-.6 2-4.3Z" stroke="currentColor" stroke-width="1.1"/></svg></div>
+              <h3>Endless Reasons to Smile</h3>
+              <p>That laughter catches you off guard in ordinary grocery aisles and quiet corner bookstores.</p>
+              <div class="sig">— Always</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTER 10 -->
+      <section class="chapter ch-10" id="ch10" data-chapter="10">
+        <article class="letter reveal">
+          <div class="top">
+            <span class="l">
+              <svg width="16" height="13" viewBox="0 0 16 13" fill="none" aria-hidden="true"><rect x="1" y="1" width="14" height="11" rx="1" stroke="#847376"/><path d="M1 2l7 5 7-5" stroke="#847376"/></svg>
+              Chapter 10 • Private Archive
+            </span>
+            <span class="seal-mini" aria-hidden="true"><svg viewBox="0 0 12 16" fill="none"><rect x="1" y="6" width="10" height="9" rx="1.5" stroke="#fff" stroke-width="1.2"/><path d="M3.5 6V4a2.5 2.5 0 0 1 5 0v2" stroke="#fff" stroke-width="1.2"/></svg></span>
+          </div>
+          <div>
+            <h2>“There are things I never quite knew how to say.”</h2>
+            <span class="kicker">Personal monograph • Hand-penned for Sahana</span>
+          </div>
+          <div class="body">
+            <p style="margin:0">Dearest Sahana,</p>
+            <p style="margin:0">Language often fails at the precise intersection of wonder and restraint. How does one explain that merely knowing you are somewhere in this same world makes the day lighter?</p>
+            <p style="margin:0">I have never desired to claim your time or dictate your future. My only goal has been to stand as a calm harbor—one where you are seen exactly as you are, cherished without conditions, and remembered without end.</p>
+            <p style="margin:0">If our paths only ever cross in these quiet, gentle intervals, please know it has been one of the great privileges of my lifetime.</p>
+          </div>
+          <div class="sign">
+            <div>
+              <div class="kk">Devotedly recorded,</div>
+              <div class="vv">Yours, in all chapters</div>
+            </div>
+            <button class="btn" id="pressWax" type="button" style="padding:8px 16px;font-size:12px;letter-spacing:1.2px;box-shadow:none;border-radius:12px">
+              <svg width="12" height="16" viewBox="0 0 12 16" fill="none" aria-hidden="true"><rect x="1" y="6" width="10" height="9" rx="1.5" stroke="#fff" stroke-width="1.2"/><path d="M3.5 6V4a2.5 2.5 0 0 1 5 0v2" stroke="#fff" stroke-width="1.2"/></svg>
+              Pressed in wax
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!-- CHAPTER 11 -->
+      <section class="chapter ch-11" id="ch11" data-chapter="11">
+        <div class="ch-11-inner reveal">
+          <span class="pill-label" style="font-size:11px;letter-spacing:1.1px;padding:4px 16px">Chapter 11 • The Transition Coda</span>
+          <h3 class="big">“And now, there's one more little thing. One name. 143 ways to write it.”</h3>
+          <p class="ch-body">Because a soul like yours cannot be contained in a single alphabet. Across every continent, script, and dialect, love has discovered a way to articulate your presence.</p>
+          <a class="cta-plum" href="#act2">Discover your name in 143 languages
+            <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- Quick chapter navigation (floating) -->
+      <nav class="chapter-nav" id="chapterNav" aria-label="Chapters">
+        <span class="lbl">Chapters:</span>
+        <a href="#ch01" data-ch="01">01</a><a href="#ch02" data-ch="02">02</a><a href="#ch03" data-ch="03">03</a>
+        <a href="#ch04" data-ch="04">04</a><a href="#ch05" data-ch="05">05</a><a href="#ch06" data-ch="06">06</a>
+        <a href="#ch07" data-ch="07">07</a><a href="#ch08" data-ch="08">08</a><a href="#ch09" data-ch="09">09</a>
+        <a href="#ch10" data-ch="10">10</a><a href="#ch11" data-ch="11">11</a>
+      </nav>
+    </section>
+
+    <!-- =====================================================================
+         DESIGN 1 — ACT II (Sections Three, Four, Five, Six)
+         ===================================================================== -->
+    <section id="act2" class="act2">
+      <!-- SECTION THREE -->
+      <div class="s3-head reveal">
+        <span class="chip" style="background:#f5e4e9;box-shadow:0 1px 1px rgba(0,0,0,.05);padding:4px 16px;border-radius:12px;font-size:11px;letter-spacing:.55px;color:var(--ink-2)">
+          <span class="dot" style="background:var(--plum);opacity:1;width:6px;height:6px"></span>
+          Act II — A name, many worlds <span style="color:var(--line)">•</span> Folio 143
+        </span>
+        <h2 class="s3-title">One Name. <em>143 Ways</em> to Write It.</h2>
+        <p class="s3-quote">“Different languages. Different scripts. Different worlds. One beautiful name.”</p>
+      </div>
+
+      <div class="wrap">
+        <div class="centerpiece reveal">
+          <span class="corner-tl">N° 143 Archival Index</span>
+          <span class="corner-tr">Perpetual Monograph</span>
+          <span class="halo" aria-hidden="true"></span>
+          <div class="word">SAHANA</div>
+          <div class="rule-row" style="margin-top:12px"><i></i><span class="lang-chip">
+            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" aria-hidden="true"><path d="M1 2h4v8H1zM8 2h4v8H8z" stroke="#562533" stroke-width="1"/></svg>
+            143 Languages &amp; Scripts</span><i></i></div>
+          <span class="wash" aria-hidden="true"></span>
+          <div class="hints">
+            <a href="#canvas">Constellation canvas</a><span class="sep">•</span>
+            <a href="#archive">Archival catalog</a><span class="sep">•</span>
+            <a href="#archive">Spoken phonetics</a>
+          </div>
+        </div>
+
+        <!-- SECTION FOUR: Constellation canvas -->
+        <div class="constellation reveal" id="canvas">
+          <div class="const-head">
+            <div>
+              <div class="h">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="2.4" stroke="#562533"/><path d="M9 1v3M9 14v3M1 9h3M14 9h3M3.3 3.3l2.1 2.1M12.6 12.6l2.1 2.1M3.3 14.7l2.1-2.1M12.6 5.4l2.1-2.1" stroke="#562533" stroke-linecap="round"/></svg>
+                <h2>The Constellation Canvas</h2>
+              </div>
+              <p>Touch or click any pulsing celestial node to illuminate its script folio, native glyphs, and phonetics.</p>
+            </div>
+            <button class="btn-soft" id="rearrange" type="button">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 3h6M6 1l2 2-2 2M10 9H4M6 7l-2 2 2 2" stroke="#514346" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Rearrange sky
+            </button>
+          </div>
+          <div class="canvas" id="sky" role="group" aria-label="Interactive script constellation">
+            <svg class="stars" id="starLayer" aria-hidden="true" preserveAspectRatio="none"></svg>
+            <div class="node-panel" id="nodePanel" role="status" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <!-- SECTION FIVE: 143 archive -->
+        <div class="archive" id="archive">
+          <div class="archive-head reveal">
+            <span class="eyebrow" style="letter-spacing:2px">Comprehensive lexicon</span>
+            <h2>Curated Archive of Devotion</h2>
+            <p>Each entry carefully cataloged across phonological systems, liturgical orthographies, and living calligraphic lineages.</p>
+            <div class="status-row">
+              <span class="verified"><i></i>143 certified inscriptions</span>
+              <span>Linguistic accuracy reviewed</span>
+            </div>
+          </div>
+
+          <div class="controls reveal">
+            <label class="search">
+              <span class="sr-only">Search by language, native script, or geographic region</span>
+              <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.2"/><path d="M9.5 9.5 13 13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+              <input id="search" type="search" placeholder="Search by language, native script (e.g. ساهانا, サハナ, சஹானா), or geographic region..." autocomplete="off" />
+            </label>
+            <div class="pills" role="group" aria-label="Filter by region">
+              <button class="pill" type="button" data-filter="ALL" aria-pressed="true">All (143)</button>
+              <button class="pill" type="button" data-filter="SOUTH" aria-pressed="false">South Asian (<span data-count="SOUTH">0</span>)</button>
+              <button class="pill" type="button" data-filter="EAST" aria-pressed="false">East Asian (<span data-count="EAST">0</span>)</button>
+              <button class="pill" type="button" data-filter="MIDDLE" aria-pressed="false">Middle Eastern &amp; RTL (<span data-count="MIDDLE">0</span>)</button>
+              <button class="pill" type="button" data-filter="EUROPEAN" aria-pressed="false">European &amp; Cyrillic (<span data-count="EUROPEAN">0</span>)</button>
+            </div>
+          </div>
+
+          <div class="results-meta">
+            <span>Indexed chronologically</span>
+            <span class="count" id="resultCount">Showing 143 inscribed folios</span>
+            <span>Verified (143) • Favorites (<span id="favCount2">0</span>)</span>
+          </div>
+
+          <div class="lang-grid" id="langGrid" aria-live="polite"></div>
+          <p class="empty" id="emptyState">No folio matches that search. Try another script, language, or region.</p>
+        </div>
+
+        <!-- SECTION SIX: transition -->
+        <div class="s6 reveal">
+          <span class="k">The next chapter</span>
+          <h2>From 143 Voices to One Pure Truth</h2>
+          <p>You have seen your name carried across earth, script, and sky. Now, receive the solitary letter penned just for you.</p>
+          <a class="cta-plum" href="#act3" style="margin-top:8px">Continue to Act III: The Final Letter
+            <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         DESIGN 4 — ACT III (envelope showpiece + cinematic footer)
+         ===================================================================== -->
+    <section id="act3" class="act3">
+      <div class="act3-head reveal">
+        <span class="pill-label" style="background:rgba(245,228,233,.8);box-shadow:0 1px 2px rgba(0,0,0,.05);color:var(--mauve)">Act III — One last thing</span>
+        <h2>Before You Leave…</h2>
+        <p>There’s a quiet little letter waiting patiently just for you.</p>
+        <svg class="ornament-sm" viewBox="0 0 96 32" fill="none" aria-hidden="true"><path d="M4 16h30M62 16h30" stroke="#d6c2c5"/><path d="M48 8c-3 3-5 5-5 8a5 5 0 0 0 10 0c0-3-2-5-5-8Z" stroke="#805254"/></svg>
+      </div>
+
+      <div class="envelope-stage reveal">
+        <div class="env-wrap" id="envWrap">
+          <!-- Letter sheet (slides up when opened) -->
+          <article class="letter-sheet" id="letterSheet" aria-hidden="true">
+            <div class="lh">
+              <div>
+                <div class="s">Archival monograph No. 143</div>
+                <div class="t">To Sahana</div>
+              </div>
+              <div class="stamp" aria-hidden="true"><b>Edition</b><svg width="15" height="18" viewBox="0 0 15 18" fill="none"><path d="M3 1h9v16l-4.5-3L3 17V1Z" stroke="#562533" stroke-width="1"/></svg><span>143•L</span></div>
+            </div>
+            <h3>Some names are written in many languages.</h3>
+            <p>Some memories stay in one heart.</p>
+            <p style="font-size:24px;line-height:38px">And some stories are beautiful simply because they happened.</p>
+            <div class="hr"></div>
+            <p class="lb">I don’t know exactly what tomorrow holds, and I don’t need to decide what every moment means.</p>
+            <p class="lb">I only know that I’m grateful for the conversations, the memories, and the little moments that made this story worth keeping.</p>
+            <p class="lb" style="color:var(--plum)">Whatever life brings, I hope it brings you happiness, peace, and beautiful reasons to smile.</p>
+            <div class="sg">
+              <div>
+                <div class="n">Always, with love.</div>
+                <div class="f">A timeless keepsake ♥</div>
+              </div>
+              <div class="f" style="color:var(--mauve)">✎ Forever bound</div>
+            </div>
+            <div class="foot">
+              <span>Folded keepsake edition</span>
+              <button type="button" id="foldLetter">Fold letter ↑</button>
+            </div>
+          </article>
+
+          <!-- Physical envelope -->
+          <div class="envelope" aria-hidden="false">
+            <div class="liner"></div>
+            <div class="flap-l"></div>
+            <div class="flap-r"></div>
+            <div class="bottom"></div>
+            <div class="top-flap"></div>
+          </div>
+          <button class="seal" id="sealEnv" type="button" aria-label="Click to break wax seal and open the letter">
+            <span class="inner"><span>S • 143</span></span>
+          </button>
+          <div class="env-cta"><span class="cue">
+            <svg width="11" height="14" viewBox="0 0 11 14" fill="none" aria-hidden="true"><rect x="1" y="6" width="9" height="7" rx="1.5" stroke="#562533" stroke-width="1.2"/><path d="M3.5 6V4a2 2 0 0 1 4 0v2" stroke="#562533" stroke-width="1.2"/></svg>
+            Click to break wax seal &amp; open</span></div>
+        </div>
+        <p class="detail">“Made with love, one little detail at a time.”</p>
+      </div>
+
+      <footer class="act3-footer reveal" id="footerInscribed">
+        <div class="headstone">
+          <div class="k">The keepsake record</div>
+          <h3>SAHANA — IN EVERY LANGUAGE</h3>
+          <p>143 languages. One beautiful name. A collection of little memories held in quiet warmth.</p>
+        </div>
+        <div class="inscription">“Some stories are meant to be remembered.”</div>
+        <div class="actions-row">
+          <a class="btn" href="#prologue">
+            <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M6 3L2 7l4 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Return to prologue
+          </a>
+          <button class="btn-soft" id="musicToggle2" type="button" aria-pressed="false">
+            <span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--plum);display:inline-block"></span>
+            Listening to memory melodies
+          </button>
+          <a class="btn-soft" href="#archive" style="background:#fff8f8">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 3h10v8H2zM2 3l5 4 5-4" stroke="#805254" stroke-width="1"/></svg>
+            Read all 143 words
+          </a>
+        </div>
+        <span class="archival-line">Handcrafted archival monograph • Private edition • Infinite pages</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="foot-inner">
+      <div>
+        <div class="fb">Sahana</div>
+        <p class="fs">A timeless archival edition • Bound with love across 143 expressions.</p>
+      </div>
+      <div class="rt">
+        <span>© Keepsake archival monograph</span>
+        <a href="#prologue" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
